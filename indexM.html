@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos</title>
+    <style>
+        html, body {
+            height: 100%; 
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            text-align: center;
+            background-image: url('https://th.bing.com/th/id/R.d48465eb372ac19757a1abd56bae58fb?rik=WJunmFBJkurlgg&pid=ImgRaw&r=0');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333;
+            padding: 20px;
+        }
+        
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        
+        .header img {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin: 0;
+        }
+        
+        form {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        mark {
+            background-color: #f8f9fa;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        
+        input, select {
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 200px;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 20px 0;
+        }
+        
+        button {
+            background-color: orange;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body> 
+    <div class="header">
+        <img src="https://th.bing.com/th/id/OIP.VK59c3NqZbEu9wDNBg0M4wHaHa?rs=1&pid=ImgDetMain" alt="Logo">
+        <h1>FORMULARIO DE DATOS</h1>
+    </div>
+    
+    <form action="">
+        <h2><mark>DATOS GENERALES</mark></h2>
+        <div>
+            <label><mark>Nombre/s:</mark></label>
+            <input type="text" required>
+        </div>
+        
+        <div>
+            <label><mark>Apellidos:</mark></label>
+            <input type="text" required>
+        </div>
+        
+        <div>
+            <label><mark>Matrícula:</mark></label>
+            <input type="text" required>
+        </div>
+        
+        <hr>
+        
+        <h2>ESCUELA O INSTITUCIÓN</h2>
+        
+        <div>
+            <label><mark>Nombre de la institución:</mark></label>
+            <input type="text" required>
+        </div>
+        
+        <div>
+            <label><mark>Máximo nivel de estudios:</mark></label>
+            <select name="Nivel" id="grado-de-estudios">
+                <option value="Primaria">Primaria</option>
+                <option value="Secundaria">Secundaria</option>
+                <option value="Bachillerato">Bachillerato</option>
+                <option value="Licenciatura">Licenciatura</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="fecha-inicio"><mark>Fecha de inicio:</mark></label>
+            <input type="date" id="fecha-inicio" name="fecha-inicio" required>
+        </div>
+        
+        <div>
+            <label for="fecha-termino"><mark>Fecha de terminación:</mark></label>
+            <input type="date" id="fecha-termino" name="fecha-termino" required>
+        </div>
+        
+        <hr>
+        
+        <button type="submit">Guardar</button>
+    </form>
+</body>
+</html>
